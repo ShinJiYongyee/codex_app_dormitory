@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>KKU Dormitory Portal (Reference)</title>
+    <meta name="description" content="University dormitory web app (unofficial reference UI)" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#/">
+          <span class="brand-mark" aria-hidden>🏫</span>
+          <span class="brand-text" data-i18n="brand">KKU Dormitory</span>
+        </a>
+        <nav class="nav">
+          <a href="#/announcements" data-i18n="nav.announcements">Announcements</a>
+          <a href="#/rooms" data-i18n="nav.rooms">Rooms</a>
+          <a href="#/application" data-i18n="nav.application">Application</a>
+          <a href="#/faq" data-i18n="nav.faq">FAQ</a>
+          <a href="#/contact" data-i18n="nav.contact">Contact</a>
+        </nav>
+        <div class="controls">
+          <button id="langToggle" class="btn" type="button" aria-label="Switch language">EN</button>
+          <button id="themeToggle" class="btn" type="button" aria-label="Toggle color theme">🌙</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Top slideshow using images from ../image -->
+    <section class="slideshow-section">
+      <div class="container">
+        <div id="slideshow" class="slideshow" role="region" aria-label="Featured images"></div>
+      </div>
+    </section>
+
+    <main id="app" class="container" role="main" aria-live="polite"></main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong data-i18n="footer.title">Unofficial Reference</strong>
+          <p>
+            <span data-i18n="footer.desc1">This site is a reference UI and is not affiliated with KKU.</span>
+            <span data-i18n="footer.desc2">For official details and applications, visit</span>
+            <a href="https://dorm.kku.ac.kr/main.do?dormType=M" target="_blank" rel="noreferrer" data-i18n="footer.link">the KKU Dorm Portal</a>.
+          </p>
+        </div>
+        <div class="footer-links">
+          <a href="#/application" class="btn btn-primary" data-i18n="footer.apply">Apply Now</a>
+          <a href="#/announcements" class="btn" data-i18n="footer.latest">Latest News</a>
+        </div>
+      </div>
+    </footer>
+
+    <noscript>
+      This app requires JavaScript to run. Please enable JavaScript.
+    </noscript>
+
+    <script src="./app.js"></script>
+  </body>
+  </html>
