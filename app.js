@@ -7,9 +7,9 @@ const EXTERNAL_LINKS = {
 
 // Slideshow images (served from ../image relative to public/index.html)
 const SLIDESHOW_IMAGES = [
-  '/image/home-image2.jpg',
-  '/image/SE-82c900af-10d1-47f1-8e07-cf1a8e21a297.png',
-  '/image/72d4401f0d44467959c00d3110357946_FhQneDZXUpKAF4xfbooki7DDjPoQ.jpg',
+  './image/home-image2.jpg',
+  './image/SE-82c900af-10d1-47f1-8e07-cf1a8e21a297.png',
+  './image/72d4401f0d44467959c00d3110357946_FhQneDZXUpKAF4xfbooki7DDjPoQ.jpg',
 ];
 
 function initSlideshow(images, intervalMs = 4500) {
